@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:maxHeight="400dp"
+        android:text="No Text"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_read"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="gravity"
+        android:textColor="#20fc03"
+        android:textSize="18dp" />
+    <!--android:onClick="takePicture789"/>-->
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        android:onClick="captureImage"
+        android:src="@mipmap/capture" />
+
+
+</RelativeLayout>
